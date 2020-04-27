@@ -1,0 +1,77 @@
+Case Number,Report Date,Sex,Age,Exposure,Testing
+1,03/27/20,Female,50,Person to Person,Private
+2,03/29/20,Male,69,Person to Person,Private
+3,03/29/20,Female,66,Person to Person,Private
+4,03/29/20,Male,58,Unknown,Public
+5,03/29/20,Female,55,Person to Person,Public
+6,03/30/20,Female,30,Person to Person,Private
+7,03/30/20,Male,41,Travel Related,Private
+8,03/31/20,Male,48,Person to Person,Private
+9,03/31/20,Male,36,Person to Person,Private
+10,03/31/20,Male,29,Person to Person,Private
+11,03/31/20,Female,50,Person to Person,Public
+12,04/02/20,Male,47,Unknown,Private
+13,04/02/20,Female,63,Person to Person,Private
+14,04/02/20,Male,61,Person to Person,Private
+15,04/02/20,Male,54,Person to Person,Private
+16,04/03/20,Female,38,Person to Person,Private
+17,04/03/20,Female,36,Person to Person,Private
+18,04/03/20,Female,32,Person to Person,Private
+19,04/03/20,Male,27,Travel Related,Public
+20,04/03/20,Male,79,Person to Person,Private
+21,04/03/20,Female,40,Travel Related,Private
+22,04/03/20,Female,63,Person to Person,Private
+23,04/04/20,Female,58,Travel Related,Private
+24,04/04/20,Female,53,Person to Person,Private
+25,04/04/20,Female,37,Person to Person,Private
+26,04/04/20,Male,20,Person to Person,Public
+27,04/06/20,Female,59,Unknown,Private
+28,04/06/20,Female,36,Person to Person,Private
+29,04/06/20,Female,52,Person to Person,Private
+30,04/06/20,Male,55,Person to Person,Private
+31,04/07/20,Female,22,Person to Person,Public
+32,04/07/20,Female,48,Person to Person,Public
+33,04/07/20,Male,49,Person to Person,Public
+34,04/07/20,Female,22,Person to Person,Public
+35,04/08/20,Male,50,Person to Person,Private
+36,04/09/20,Male,66,Person to Person,Private
+37,04/09/20,Female,53,Person to Person,Private
+38,04/09/20,Male,53,Person to Person,Private
+39,04/09/20,Female,59,Person to Person,Private
+40,04/09/20,Female,46,Person to Person,Public
+41,04/10/20,Female,36,Person to Person,Private
+42,04/11/20,Female,28,Unknown,Private
+43,04/11/20,Female,32,Unknown,Private
+44,04/13/20,Female,38,Unknown,Private
+45,04/13/20,Male,49,Person to Person,Private
+46,04/14/20,Female,24,Person to Person,Private
+47,04/15/20,Female,61,Unknown,Private
+48,04/15/20,Female,44,Person to Person,Private
+49,04/15/20,Female,60,Unknown,Private
+50,04/15/20,Female,46,Person to Person,Public
+51,04/15/20,Male,47,Person to Person,Public
+52,04/15/20,Male,72,Person to Person,Public
+53,04/16/20,Female,53,Person to Person,Public
+54,04/16/20,Male,27,Person to Person,Private
+55,04/16/20,Male,4 mths old,Person to Person,Public
+56,04/16/20,Female,13,Person to Person,Public
+57,04/16/20,Female,11,Person to Person,Public
+58,04/16/20,Female,32,Person to Person,Private
+59,04/19/20,Female,30,Unknown,Private
+60,04/20/20,Female,25,Person to Person,Private
+61,04/21/20,Female,60,Person to Person,Private
+62,04/22/20,Female,37,Unknown,Private
+63,04/22/20,Female,23,Person to Person,Public
+64,04/22/20,Female,1 yr. old,Person to Person,Public
+65,04/23/20,Female,30,Unknown,Private
+66,04/24/20,Female,52,Unknown,Private
+67,04/24/20,Male,48,Unknown,Private
+68,04/25/20,Female,26,Person to Person,Private
+69,04/25/20,Male,34,Unknown,Private
+70,04/25/20,Male,32,Unknown,Private
+71,04/26/20,Male,41,Person to Person,Public
+72,04/26/20,Male,8 yr. old,Person to Person,Public
+73,04/27/20,Male,24,Unknown,Private
+74,04/27/20,Female,10 yr. old,Unknown,Private
+75,04/27/20,Female,5 mths. Old,Unknown,Private
+76,04/27/20,Male,33,Unknown,Private
