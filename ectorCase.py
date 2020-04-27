@@ -1,5 +1,8 @@
-# http://www.co.ector.tx.us/upload/page/9908/docs/Case%20Information%2004-26-20.pdf
-# the pdf has the date in the name, would have to check for the new date, or default to date - 1
+#Issues: originally Ector county was uploading the case statistics to an HTML table that
+# could be grabbed with an importhtml in google sheets. They then changed to a link to a
+# PDF file. The first page of the PDF does not appear to scrape properly, so some additional
+# processing is required -- @texastom (odessacoding.com) suggested some changes for handling
+# prior dates and for using pandas dataframes instead of the overly complicated regex
 
 from tabula import read_pdf, convert_into
 import re
@@ -10,15 +13,16 @@ from datetime import date, timedelta
 
 def main():
 	urlBase="http://www.co.ector.tx.us/upload/page/9908/docs/"
-	pdfFile = 'ectorCaseTest.pdf'
+	pdfFile = 'ectorCases.pdf' # name for saving the file
 
-	tStampToday=f"{date.today():%m-%d-%y}"
-	fileNameToday="Case%20Information%20" + tStampToday + ".pdf"	
+	tStampToday=f"{date.today():%m-%d-%y}" # today's date 
+	fileNameToday="Case%20Information%20" + tStampToday + ".pdf" # filename appears to change each day
 
-	urlToday=urlBase + fileNameToday
-	fetchFile(urlToday,pdfFile)
+	urlToday=urlBase + fileNameToday # join the url and filename
+	fetchFile(urlToday,pdfFile) # fetch the file and do some processing
 
 	txtPDF='ectorCaseFiles.txt'
+	# was using tabula's convert_into function, but then took a different approach
 	# convert_into(pdfFile,txtPDF,output_format="csv",pages='all',stream=True)
 	readFile(txtPDF)
 
@@ -30,7 +34,6 @@ def main2():
     fileNameToday="Case%20Information%20" + tStampToday + ".pdf"    
 
     urlToday=urlBase + fileNameToday
-    # fetchFile(urlToday,pdfFile)
     fetchFile2(urlBase,pdfFile)
 
     pdf = PyPDF2.PdfFileReader(open('ectorCaseTest.pdf','rb'))
