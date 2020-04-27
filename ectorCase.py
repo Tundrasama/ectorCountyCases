@@ -20,8 +20,46 @@ def main():
 
 	txtPDF='ectorCaseFiles.txt'
 	# convert_into(pdfFile,txtPDF,output_format="csv",pages='all',stream=True)
-
 	readFile(txtPDF)
+
+def main2():
+    urlBase="http://www.co.ector.tx.us/upload/page/9908/docs/"
+    pdfFile = 'ectorCaseTest.pdf'
+
+    tStampToday=f"{date.today():%m-%d-%y}"
+    fileNameToday="Case%20Information%20" + tStampToday + ".pdf"    
+
+    urlToday=urlBase + fileNameToday
+    # fetchFile(urlToday,pdfFile)
+    fetchFile2(urlBase,pdfFile)
+
+    pdf = PyPDF2.PdfFileReader(open('ectorCaseTest.pdf','rb'))
+    pages = pdf.getNumPages()
+    currPage = 1
+    mainColumns = []
+    mainDF = None
+    while currPage <= pages:
+        df = read_pdf('ectorCaseTest.pdf', pages=f'{currPage}', stream=True, lattice=True, pandas_options={'header': None})
+
+        df = df[0]
+
+        if currPage == 1:
+            df.dropna(axis=1, how='all', inplace=True)
+            df = df.iloc[1:]
+            df.columns = df.values[0]
+            mainColumns = df.values[0]
+            df = df.iloc[1:]
+            mainDF = df.copy()
+
+        else:
+            df.dropna(axis=1, how='all', inplace=True)
+            df.columns = mainColumns
+            mainDF = mainDF.append(df)
+
+        currPage = currPage + 1
+    print(mainDF)
+    mainDF.to_csv('cleanedOutputPandas.csv', index=False)
+    exit()
 
 def writeFile(pdfReader,output,numPages):
 	with open(output,'w') as f:
@@ -40,6 +78,31 @@ def fetchFile(url,pdfFile):
 		fileNameYesterday="Case%20Information%20" + tStampYesterday + ".pdf"
 		url=url + fileNameYesterday
 		fetchFile(url,pdfFile)	
+
+def fetchFile2(baseURL,pdfFile):
+    success = False
+    attempts = 1
+    maxAttempts = 5
+
+    while not success:
+        tStamp=f"{date.today()-timedelta(days=attempts - 1):%m-%d-%y}"
+        fileName="Case%20Information%20" + tStamp + ".pdf"    
+        url = baseURL + fileName
+        print(f'Attempting Download: {url}')
+
+        r=requests.get(url,stream=True)
+
+        if r.status_code==200:
+            print(f'HTTP 200: {url}')
+            with open(pdfFile,'wb') as f:
+                f.write(r.content)
+                success = True
+
+        attempts = attempts + 1
+            
+        if attempts >= maxAttempts:
+            print(f"Couldn't download a file. Searched {attempts} days.")
+            exit()
 
 def readFile(txtFile):
 	allLines=[]
@@ -83,4 +146,5 @@ def writeCleanedFile(lines):
 			f.write(str(line))
 		
 if __name__ == "__main__":
-	main()
+	main2()
+	# main()
