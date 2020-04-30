@@ -73,5 +73,7 @@ Case Number,Report Date,Sex,Age,Exposure,Testing
 72,04/26/20,Male,8 yr. old,Person to Person,Public
 73,04/27/20,Male,24,Unknown,Private
 74,04/27/20,Female,10 yr. old,Unknown,Private
-75,04/27/20,Female,5 mths. Old,Unknown,Private
+75,04/27/20,Female,5 mths. old,Unknown,Private
 76,04/27/20,Male,33,Unknown,Private
+77,04/28/20,Male,45,Unknown,Public
+78,04/28/20,Female,16,Unknown,Public
