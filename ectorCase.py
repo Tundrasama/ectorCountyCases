@@ -27,7 +27,8 @@ def main():
 	readFile(txtPDF)
 
 def main2():
-    urlBase="http://www.co.ector.tx.us/upload/page/9908/docs/"
+	# url added images when run on 5/4/2020
+    urlBase="http://www.co.ector.tx.us/upload/page/9908/images/docs/"
     pdfFile = 'ectorCaseTest.pdf'
 
     tStampToday=f"{date.today():%m-%d-%y}"
