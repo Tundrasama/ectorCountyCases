@@ -89,3 +89,7 @@ Case Number,Report Date,Sex,Age,Exposure,Testing
 88,05/06/20,Female,29,Unknown,Private
 89,05/06/20,Male,52,Unknown,Private
 90,05/06/20,Female,54,Unknown,Private
+91,05/07/20,Male,38,Person to Person,Private
+92,05/07/20,Male,64,Person to Person,Private
+93,05/07/20,Female,46,Person to Person,Private
+94,05/07/20,Female,55,Person to Person,Private
