@@ -94,8 +94,10 @@ Case Number,Report Date,Sex,Age,Exposure,Testing
 93,05/07/20,Female,46,Person to Person,Private
 94,05/07/20,Female,55,Person to Person,Private
 95,05/07/20,Female,25,Person to Person,Private
-96,05/09/20,Female,41,Unknown,Private
-97,05/09/20,Female,45,Unknown,Private
-98,05/09/20,Male,29,Unknown,Private
-99,05/09/20,Male,25,Unknown,Private
-100,05/11/20,Male,49,Unknown,Private
+96,5/9/2020,Female,41,Unknown,Private
+97,5/9/2020,Female,45,Unknown,Private
+98,5/9/2020,Male,29,Unknown,Private
+99,5/9/2020,Male,25,Unknown,Private
+100,5/11/2020,Male,49,Unknown,Private
+101,5/12/2020,Female,33,Unknown,Private
+102,5/13/2020,Female,57,Unknown,Private
