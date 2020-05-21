@@ -53,7 +53,7 @@ Case Number,Report Date,Sex,Age,Exposure,Testing
 52,04/15/20,Male,72,Person to Person,Public
 53,04/16/20,Female,53,Person to Person,Public
 54,04/16/20,Male,27,Person to Person,Private
-55,04/16/20,Male,4 mths old,Person to Person,Public
+55,04/16/20,Male,4 mths,Person to Person,Public
 56,04/16/20,Female,13,Person to Person,Public
 57,04/16/20,Female,11,Person to Person,Public
 58,04/16/20,Female,32,Person to Person,Private
@@ -62,7 +62,7 @@ Case Number,Report Date,Sex,Age,Exposure,Testing
 61,04/21/20,Female,60,Person to Person,Private
 62,04/22/20,Female,37,Person to Person,Private
 63,04/22/20,Female,23,Person to Person,Public
-64,04/22/20,Female,1 yr. old,Person to Person,Public
+64,04/22/20,Female,1,Person to Person,Public
 65,04/23/20,Female,30,Person to Person,Private
 66,04/24/20,Female,52,Community Spread,Private
 67,04/24/20,Male,48,Person to Person,Private
@@ -70,10 +70,10 @@ Case Number,Report Date,Sex,Age,Exposure,Testing
 69,04/25/20,Male,34,Person to Person,Private
 70,04/25/20,Male,32,Person to Person,Private
 71,04/26/20,Male,41,Person to Person,Public
-72,04/26/20,Male,8 yr. old,Person to Person,Public
+72,04/26/20,Male,8,Person to Person,Public
 73,04/27/20,Male,24,Person to Person,Private
-74,04/27/20,Female,10 yr. old,Person to Person,Private
-75,04/27/20,Female,5 mths. old,Person to Person,Private
+74,04/27/20,Female,10,Person to Person,Private
+75,04/27/20,Female,5 mths,Person to Person,Private
 76,04/27/20,Male,33,Travel,Private
 77,04/28/20,Male,45,Unknown,Public
 78,04/28/20,Female,16,Community Spread,Public
@@ -94,11 +94,11 @@ Case Number,Report Date,Sex,Age,Exposure,Testing
 93,05/07/20,Female,46,Person to Person,Private
 94,05/07/20,Female,55,Person to Person,Private
 95,05/07/20,Female,25,Person to Person,Private
-96,05/09/20,Female,41,Unknown,Private
-97,05/09/20,Female,45,Unknown,Private
-98,05/09/20,Male,29,Unknown,Private
-99,05/09/20,Male,25,Unknown,Private
-100,05/11/20,Male,49,Unknown,Private
+96,5/9/2020,Female,41,Unknown,Private
+97,5/9/2020,Female,45,Unknown,Private
+98,5/9/2020,Male,29,Unknown,Private
+99,5/9/2020,Male,25,Unknown,Private
+100,5/11/2020,Male,49,Unknown,Private
 101,5/12/2020,Female,33,Unknown,Private
 102,5/13/2020,Female,57,Unknown,Private
 103,5/14/2020,Male,36,Person to Person,Private
@@ -109,7 +109,23 @@ Case Number,Report Date,Sex,Age,Exposure,Testing
 108,5/15/2020,Male,54,Unknown,Private
 109,5/15/2020,Female,23,Unknown,Private
 110,5/16/2020,Male,36,Person to Person,Private
-111,5/16/2020,Female,7 yr. old,Person to Person,Public
+111,5/16/2020,Female,7,Person to Person,Public
 112,5/16/2020,Male,36,Person to Person,Public
-113,5/16/2020,Female,12 yr. old,Person to Person,Public
+113,5/16/2020,Female,12,Person to Person,Public
 114,5/16/2020,Female,37,Person to Person,Public
+115,5/18/2020,Female,35,Unknown,Private
+116,5/19/2020,Female,37,Unknown,Private
+117,5/19/2020,Female,19,Unknown,Private
+118,5/19/2020,Male,42,Unknown,Private
+119,5/19/2020,Male,40,Unknown,Private
+120,5/19/2020,Female,24,Unknown,Public
+121,5/19/2020,Male,6,Unknown,Public
+122,5/19/2020,Female,63,Unknown,Private
+123,5/19/2020,Male,68,Unknown,Private
+124,5/19/2020,Male,13,Person to Person,Private
+125,5/19/2020,Male,48,Unknown,Private
+126,5/19/2020,Male,33,Unknown,Private
+127,5/20/2020,Male,52,Unknown,Private
+128,5/20/2020,Female,21,Unknown,Private
+129,5/20/2020,Female,31,Unknown,Private
+130,5/20/2020,Female,25,Unknown,Private
